@@ -4,22 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const name="JOHN";
+  let x=10;
+  let y=20;
+  function name1(){
+    return"My name is Rajat";
+  }
+  function sum(a,b,op){
+    if(op=='+'){
+      return a+b;
+    }
+    else if(op=='-'){
+      return a-b;
+    }
 
   return (
   <div> 
-    <h1> welcome</h1>
-    <h1> dino</h1>
-    <Employee></Employee>
+  <h1>user variable with jsx</h1>
+  <h3>Value of variable is {name}</h3>
+  <h3>{x+y}</h3>
+  <h3>Use of function withJSX</h3>
+  <h3>{name1()}</h3>
+  <h3>{sum(20,10,'-')}</h3>
   </div>
   )
 }
-
-function Employee()
-{
-  return(
-    <h1>this is Employee component </h1>
-  )
 }
-
 export default App
