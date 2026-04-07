@@ -4,23 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  
-    <h1> welcome in new project </h1>
-  
-  function apple()
-  {
-    alert("you click on apple")
+  function fun(){
+    alert ("you click on button")
+  }  
+  const fruit=(name,AP,BN)=> {
+    alert (name,AP,BN)
   }
-  function banana()
-  {
-    alert("click on banana")
+  let data ="Demo"
+  function updata(){
+    data = "Example"
+    alert (data);
   }
+ 
   return(
-    <div>
+    <>
 
-<button onclick={apple}>apple </button>
-<button onclick={banana}>banana</button>
-</div>
+<h1> example of arrow function</h1>
+<button onClick={fun}>click on button</button>
+<button onClick={()=>fruit("first parameter")}>arrow fruit button</button>
+<button onClick={()=>fruit("youclick on apple")}>APPLE</button>
+<button onClick={()=>fruit("you click on banana")}>BANANA</button>
+<h3> state in react</h3>
+<h1> {data}</h1>
+<button onClick={updata}>click to change value</button>
+</>
   )
 }
 export default App
